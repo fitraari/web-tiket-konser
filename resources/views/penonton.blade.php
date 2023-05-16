@@ -23,25 +23,19 @@
       <div class="container">
       <h1 class="mt-5 mb-5">Selamat Datang di Portal Pemesanan Tiket Konser</h1>
       <h4 class="mb-3">Silahkan menginputkan data anda di form di bawah</h4>
-      <div class="form-group">
-        <form action="{{ url('/store') }}" method="post">
-          {{ csrf_field() }}
-          <div class="mb-3">
-            <label for="nama" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama anda">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Masukkan email anda">
-          </div>
-          <div class="mb-3">
-            <label for="no_telp" class="form-label">No Telepon</label>
-            <input type="text" class="form-control" id="no_telp" placeholder="Masukkan no telepon anda">
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nama</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan nama anda">
       </div>
-      </form>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan email anda">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">No Telepon</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan no telepon anda">
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

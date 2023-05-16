@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PenontonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-});
+// Public
+Route::get('/', [PenontonController::class, 'create']);
+Route::post('/store', [PenontonController::class, 'store']);
 
+// Admin
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
